@@ -1,0 +1,26 @@
+.gen {
+    background-image: radial-gradient(circle at 120.44% 56.16%, #0098ff 0, #0095ff 5%, #0092ff 10%, #008dff 15%, #0087ff 20%, #0080ff 25%, #0077ff 30%, #006cff 35%, #665fff 40%, #9450ff 45%, #b53cf2 50%, #ce1fdf 55%, #e200cb 60%, #f100b6 65%, #fd00a0 70%, #ff0089 75%, #ff0073 80%, #ff005d 85%, #ff0047 90%, #ff0032 95%, #fb0019 100%);
+    ;
+}
+
+.columna {
+    padding: 10px;
+}
+
+.demo {
+    color: #fff;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.boton {
+    color: #fff;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    padding-bottom: 10px;
+}
+
+.div_hide {
+    opacity: 0;
+}

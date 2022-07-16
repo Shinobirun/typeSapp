@@ -1,1 +1,38 @@
-<p>aca va un empleados.</p>
+<p>Nombre : {{nombre}}</p>
+<p>Apellido : {{apellido}}</p>
+<p>Edad : {{getEdad()}}</p>
+<p>Es menor de edad?: {{getEdad()<18 ? "Menor de edad":"Mayor de edad"}}</p>
+<p>Empresa : {{empresa.value}}</p>
+<p>Frase : {{frase.value}}</p>
+<br>
+<br>
+Ingresa la empresa: <input type="text" #empresa>
+
+
+<br>
+<br>
+<input type="button" value="Ingresa" [disabled]="eBoton" (click)="llamaEmpresa(empresa.value)" >
+<br>
+<br>
+Ingrese una frase <input type="text" #frase (keyup)="0">
+
+<br>
+<br>
+<br>
+Registrado: <input type="checkbox" id="registro" [checked]="usuReg">
+
+{{GetRegUsu()}}
+
+<br>
+<br>
+<br>
+{{textReg}}
+<br>
+Quiere Registrarse, o registrar un usuario nuevo?: <input type="checkbox" id="registro" (click)="setusuRegistrado($event)">
+
+<br>
+<br>
+<br>
+
+Registrado:<input type="radio" value="si" name="nRegis" id="registro" [checked]="usuReg" (click)="setusuRegistrado($event)">
+No registrado:<input type="radio" value="no" name="nRegis" (click)="setusuRegistrado($event)">
